@@ -1,5 +1,5 @@
 # Tuf x570 Hackintosh Guide
-#### BigSur with Everything working (i services,Sleep)
+#### BigSur with Everything working ( Apple services,Sleep )
 [![N|Solid](https://d2.alternativeto.net/dist/icons/opencore_168788.png?width=64&height=64&mode=crop&upscale=false)](https://github.com/dortania/OpenCore-Install-Guide)
 
 Brief of my Hackintoshing story and Some free tips xD
