@@ -65,6 +65,8 @@ a true pain in the *ss. One second of connection lost and bang u get the Lost co
 (if you are using the exatct same board u can copy this SSDT-SBRG and AMDUSBMAP.kext every Port work just fine Thanks me later )
 
 If you have a similar system and couldn't get it to boot feel free to ask for help at my twitter :  [ https://twitter.com/Amuu639 ]
+
+
 Good Luck and HaveFun Hackintoshing.
 ### Todos
 - Benchmarks
