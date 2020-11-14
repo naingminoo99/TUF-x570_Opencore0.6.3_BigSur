@@ -47,9 +47,9 @@ Here is Pc Part Picker Link: [https://pcpartpicker.com/list/43drvf]
 * SSDT-Time - compiled using SSDT-Time ( i really recommend compiling with ssdt-time instead of using prebuild one ) 
 * GenSMBIOS - Used to generate fake SMBIOS for hack
 * MountEFI - U need this if u are making ur bootable on MAC or MACvm
-* Gib-MacOS - MacOS Downloader Script ,even tho it work on both windows and Linux I recommend using a mac to make bootable drive. (U can only make recovery drives on windows and linux)
+* Gib-MacOS - MacOS Downloader Script ,even tho it work on both windows and Linux I recommend using a mac to make bootable drive.
  (U can only make recovery drives on windows and linux and downloading MacOS through recovery is 
-a true pain in the *ss. One second of connection lost and bang u get the Lost connection retry prompt $#$#$#)
+a true pain in the *ss. One second of connection lost and bang u get the Lost connection retry prompt $#%^$%&^)
 
 ### KEXTS 
 * AppleALC - For on board audio (add alcid=1 to bootargs)
