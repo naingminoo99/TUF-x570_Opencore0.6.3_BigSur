@@ -28,6 +28,10 @@ This guide only focus on Asus Tuf x570 Plus, provided efi might work on similar 
 
 Here is Pc Part Picker Link: [https://pcpartpicker.com/list/43drvf]
 
+### RIG
+I name this Ryzenshine since it's all AMD plus it shine so xD
+![RyzenshinePic](https://i.imgur.com/Yyophex.jpeg) 
+
 ### Bios Setting
 | Setting | Value |
 | ------ | ------ |
