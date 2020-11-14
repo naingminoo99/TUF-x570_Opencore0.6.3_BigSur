@@ -67,7 +67,7 @@ a true pain in the *ss. One second of connection lost and bang u get the Lost co
 If you have a similar system and couldn't get it to boot feel free to ask for help at my twitter :  [ https://twitter.com/Amuu639 ]
 
 
-Good Luck and HaveFun Hackintoshing.
+Good Luck and Have Fun Hackintoshing.
 ### Todos
 - Benchmarks
 
