@@ -8,7 +8,7 @@ This guide only focus on Asus Tuf x570 Plus, provided efi might work on similar 
   - Don't use configurators ( most of the tools out there are Clover only supported)
   - Don't follow Youtube Guides (Just read the Dortania Guide it's the only way u can get a stable Hack)
   - Don't Copy other people's EFI (it might boot but u will end up with a problem sooner or later)
-  - The Fun is to do it yourself (Knowing what make your hack will help you maintain and troubleshoot alot easier)
+  - Doing Your Self is the Fun Part (Knowing what make your hack will help you maintain and troubleshoot alot easier)
   - Read Dortania's Guide for like 2 to 3 times
   - Try again and again and again
 
