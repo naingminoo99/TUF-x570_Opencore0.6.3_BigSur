@@ -30,6 +30,7 @@ Here is Pc Part Picker Link: [https://pcpartpicker.com/list/43drvf]
 
 ### RIG
 I name this Ryzenshine since it's all AMD plus it shine so xD
+
 ![RyzenshinePic](https://i.imgur.com/h6qTf1I.jpg) 
 
 ### Bios Setting
