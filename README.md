@@ -2,8 +2,8 @@
 #### BigSur with Everything working ( Apple services,Sleep )
 [![N|Solid](https://d2.alternativeto.net/dist/icons/opencore_168788.png?width=64&height=64&mode=crop&upscale=false)](https://github.com/dortania/OpenCore-Install-Guide)
 
-Brief of my Hackintoshing story and Some free tips xD
-This guide only focus on Asus Tuf x570 Plus, provided efi might work on similar systems but i don't recommend straight up using it. 
+This guide only focus on Asus Tuf x570 Plus, 
+provided efi might work on similar systems but i don't recommend straight up using it. 
 - TIPS
   - Don't use configurators ( most of the tools out there are Clover only supported)
   - Don't follow Youtube Guides (Just read the Dortania Guide it's the only way u can get a stable Hack)
