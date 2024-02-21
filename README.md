@@ -1,79 +1,72 @@
-# Tuf x570 Hackintosh Guide
-#### BigSur with Everything working ( Apple services,Sleep )
+# TUF X570 Hackintosh Guide
+#### Big Sur with Everything Working (Apple Services, Sleep)
 [![N|Solid](https://d2.alternativeto.net/dist/icons/opencore_168788.png?width=64&height=64&mode=crop&upscale=false)](https://github.com/dortania/OpenCore-Install-Guide)
 
-This guide only focus on Asus Tuf x570 Plus, 
-provided efi might work on similar systems but i don't recommend straight up using it. 
-- TIPS
-  - Don't use configurators ( most of the tools out there are Clover only supported)
-  - Don't follow Youtube Guides (Just read the Dortania Guide it's the only way u can get a stable Hack)
-  - Don't Copy other people's EFI (it might boot but u will end up with a problem sooner or later)
-  - Doing Your Self is the Fun Part (Knowing what make your hack will help you maintain and troubleshoot alot easier)
-  - Read Dortania's Guide for like 2 to 3 times
-  - Try again and again and again
+This guide focuses solely on the Asus TUF X570 Plus. While the provided EFI may work on similar systems, I do not recommend using it without proper adjustments.
+- Tips
+  - Avoid using configurators (most tools out there are Clover-only supported).
+  - Refrain from following YouTube guides; instead, refer to the Dortania Guide for stability.
+  - Avoid copying other people's EFI; although it might boot, it can lead to problems later on.
+  - Enjoy the process of doing it yourself; understanding what makes your hackintosh will aid in maintenance and troubleshooting.
+  - Read the Dortania Guide thoroughly, multiple times.
+  - Be persistent and keep trying until successful.
 
 ### Specifications
 
-- Mobo : Asus TUF X570
-- CPU : Ryzen 7 3700X
-- GPU : ROG Strix  Radeon RX Vega 64 8GB
-- PSU :Superflower 850W 80+ Gold
-- RAM : 3200Mhz 32GB (2x16)
-- Nvme1 : 500GB
-- Nvme2 : 500GB
-- Chassis : Corsair iCUE 465x
-- AIO : Corsair H100i RGB 
-- Fans : Corsair ll120 RGB 
-- Network : Fenvi FV-T919
+- Motherboard: Asus TUF X570
+- CPU: Ryzen 7 3700X
+- GPU: ROG Strix Radeon RX Vega 64 8GB
+- PSU: Superflower 850W 80+ Gold
+- RAM: 3200MHz 32GB (2x16)
+- NVMe1: 500GB
+- NVMe2: 500GB
+- Chassis: Corsair iCUE 465x
+- AIO: Corsair H100i RGB
+- Fans: Corsair LL120 RGB
+- Network: Fenvi FV-T919
 
-Here is Pc Part Picker Link: [https://pcpartpicker.com/list/43drvf]
+[PC Part Picker Link](https://pcpartpicker.com/list/43drvf)
 
-### RIG
-I name this Ryzenshine since it's all AMD plus it shine so xD
+### Rig
+I named this rig "Ryzenshine" since it's all AMD, plus it shines!
 
-![RyzenshinePic](https://i.imgur.com/h6qTf1I.jpg) 
+![RyzenshinePic](https://i.imgur.com/h6qTf1I.jpg)
 
-### Bios Setting
+### BIOS Settings
 | Setting | Value |
 | ------ | ------ |
-| Fastboot | OFF (Important)|
-| CSM |  OFF (Important) |
-| SecureBoot |  OFF |
+| Fastboot | OFF (Important) |
+| CSM | OFF (Important) |
+| SecureBoot | OFF |
 | IOMMU | OFF |
-| AMI Native NVme Driver | OFF |
-| USB Power Delivery In Soft State | OFF |
+| AMI Native NVMe Driver | OFF |
+| USB Power Delivery in Soft State | OFF |
 | fTPM NV for factory reset | OFF |
 | Above 4G Decoding | ON |
-| Power On By PCIE | ON |
-| PCIE16_1 | GEN 3 |
+| Power On By PCIe | ON |
+| PCIe16_1 | GEN 3 |
 
-### Tools You Need to make the installer :
-* ProperTree - used to plot Config.plist
-* SSDT-Time - compiled using SSDT-Time ( i really recommend compiling with ssdt-time instead of using prebuild one ) 
-* GenSMBIOS - Used to generate fake SMBIOS for hack
-* MountEFI - U need this if u are making ur bootable on MAC or MACvm
-* Gib-MacOS - MacOS Downloader Script ,even tho it work on both windows and Linux I recommend using a mac to make bootable drive.
- (U can only make recovery drives on windows and linux and downloading MacOS through recovery is 
-a true pain in the *ss. One second of connection lost and bang u get the Lost connection retry prompt $#%^$%&^)
+### Tools You Need to Make the Installer:
+* ProperTree - used to edit Config.plist
+* SSDT-Time - compiled using SSDT-Time (I highly recommend compiling with SSDT-Time instead of using prebuilt ones)
+* GenSMBIOS - Used to generate fake SMBIOS for hackintosh
+* MountEFI - Necessary if you're making your bootable drive on a Mac or Mac VM
+* Gib-MacOS - MacOS downloader script (works on Windows and Linux, but it's recommended to use a Mac for creating the bootable drive)
 
-### KEXTS 
-* AppleALC - For on board audio (add alcid=1 to bootargs)
-* Lilu - libary for other Kext
-* RealtekRTL8111 - for ethernet
-* VirtualSMC - the name says it all
-* WhateverGreen - to get the most out of ur Graphic card 
+### Kexts 
+* AppleALC - For onboard audio (add alcid=1 to bootargs)
+* Lilu - Library for other Kexts
+* RealtekRTL8111 - For Ethernet
+* VirtualSMC - Essential for system management
+* WhateverGreen - For optimizing your graphics card performance 
 
 ### SSDTs 
-* SSDT-EC - Fake Embeded Controller
-* SSDT-USBX - to power USB devices (eg:Ausio-DACs)
-* SSDT-SBRG - USB Mapping 
-(if you are using the exatct same board u can copy this SSDT-SBRG and AMDUSBMAP.kext every Port work just fine Thanks me later )
+* SSDT-EC - Fake Embedded Controller
+* SSDT-USBX - Powers USB devices (e.g., Audio DACs)
+* SSDT-SBRG - USB Mapping (If you're using the exact same board, you can copy this SSDT-SBRG and AMDUSBMAP.kext; every port will work just fine.)
 
-If you have a similar system and couldn't get it to boot feel free to ask for help at my twitter :  [ https://twitter.com/Amuu639 ]
+If you have a similar system and couldn't get it to boot, feel free to ask for help on my Twitter: [https://twitter.com/Amuu639]
 
-
-Good Luck and Have Fun Hackintoshing.
+Good luck and have fun hackintoshing.
 ### Todos
 - Benchmarks
-
-[//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
